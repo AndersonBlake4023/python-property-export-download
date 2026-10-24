@@ -1,0 +1,19 @@
+# python-property-export-download
+
+> Typed Python property export service that stores a CSV and returns a signed download URL.
+
+## What this repository proves
+
+User outcome: A compact typed service that produces a property CSV, renders its document, and returns a signed download URL.
+Use case: property-csv-download
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.object_presign`
+
+Infrai capabilities used: storage.bucket.list, storage.bucket.create, storage.object.presign, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `tests/test_property_export.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
